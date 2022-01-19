@@ -10,18 +10,28 @@ namespace LR
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             RedheadDuck duck1 = new RedheadDuck();
             MallardDuck duck2 = new MallardDuck();
+            RubberDuck duck3 = new RubberDuck();
+            DecoyDuck duck4 = new DecoyDuck();
 
-            Duck[] mas = new Duck[] { duck1, duck2 };
+            List<Duck> ducks = new List<Duck> { duck1, duck2, duck3, duck4 };
 
-            for (int i = 0; i < mas.Length; i++)
+            for (int duck = 0; duck < ducks.Count; duck++)
             {
-                Console.WriteLine(mas[i].Swim());
-                Console.WriteLine(mas[i].Display());
-                Console.WriteLine(mas[i].Quack());
+                Console.WriteLine(ducks[duck].Swim());
+                Console.WriteLine(ducks[duck].Display());
+                if (ducks[duck] is IQuackable)
+                {
+                    Console.WriteLine((ducks[duck] as IQuackable).Quack());
+                }
+                if (ducks[duck] is IFlyable)
+                {
+                    Console.WriteLine((ducks[duck] as IFlyable).Fly());
+                }
+
             }
 
             Console.ReadKey();

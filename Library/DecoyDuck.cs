@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    interface Quackable
+    public class DecoyDuck : Duck
     {
-        string Quack();
+        public override string Display()
+        {
+            return "Display" + " " + this.GetType();
+        }
     }
 }
