@@ -23,13 +23,13 @@ namespace LR
             {
                 Console.WriteLine(ducks[duck].Swim());
                 Console.WriteLine(ducks[duck].Display());
-                if (ducks[duck] is IQuackable)
+                if (ducks[duck] is IQuackBehavior)
                 {
-                    Console.WriteLine((ducks[duck] as IQuackable).Quack());
+                    Console.WriteLine((ducks[duck] as IQuackBehavior).Quack());
                 }
-                if (ducks[duck] is IFlyable)
+                if (ducks[duck] is IFlyBehavior)
                 {
-                    Console.WriteLine((ducks[duck] as IFlyable).Fly());
+                    Console.WriteLine((ducks[duck] as IFlyBehavior).Fly());
                 }
 
             }

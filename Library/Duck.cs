@@ -8,11 +8,17 @@ namespace Library
 {
     abstract public class Duck
     {
+        protected IFlyBehavior flyBehavior;
+        protected IQuackBehavior quackBehavior;
+
         public string Swim()
         {
-            return "Swim" + " " + this.GetType();
+            return "Буль буль буль";
         }
 
-        public abstract string Display();
+        public string Display() 
+        {
+            return this.GetType() + " " + this.flyBehavior + " " + this.quackBehavior;
+        }
     }
 }

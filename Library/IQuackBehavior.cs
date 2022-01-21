@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public interface IQuackable
+    public interface IQuackBehavior
     {
         string Quack();
     }
