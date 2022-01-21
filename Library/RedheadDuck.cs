@@ -6,21 +6,12 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class RedheadDuck : Duck, Flyable, Quackable
+    public class RedheadDuck : Duck
     {
-        public override string Display()
+        public RedheadDuck()
         {
-            return "Display 12" + " " + this.GetType();
-        }
-
-        public string Fly()
-        {
-            return "Fly" + " " + this.GetType();
-        }
-
-        public string Quack()
-        {
-            return "Quack" + " " + this.GetType();
+            flyBehavior = new FlyWithWings();
+            quackBehavior = new DQuack();
         }
     }
 }

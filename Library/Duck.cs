@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +16,19 @@ namespace Library
             return "Буль буль буль";
         }
 
-        public string Display() 
+        public string Display()
         {
             return this.GetType() + " " + this.flyBehavior + " " + this.quackBehavior;
+        }
+
+        public string Quack() 
+        {
+            return quackBehavior.Quack();
+        }
+
+        public string Fly()
+        {
+            return flyBehavior.Fly();
         }
     }
 }
