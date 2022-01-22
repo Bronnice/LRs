@@ -17,11 +17,12 @@ namespace LR
             RubberDuck duck3 = new RubberDuck();
             DecoyDuck duck4 = new DecoyDuck();
 
-            IFlyBehavior flynoway = new FlyNoWay();
-            IQuackBehavior squek = new Squek();
+            Console.WriteLine(duck1.GetType() + " до изменения:\n" + duck1.performFly() + " " + duck1.performQuack() + "\n");
+            Console.WriteLine("После:");
 
-            duck1.setFlyBehavior = flynoway;
-            duck1.setQuackBehavior = squek;
+            duck1.FlyBehavior = new FlyNoWay();
+            duck1.QuackBehavior = new Squek();
+
 
             List<Duck> ducks = new List<Duck> { duck1, duck2, duck3, duck4 };
 

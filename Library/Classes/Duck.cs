@@ -28,14 +28,12 @@ namespace Library
             return flyBehavior.Fly();
         }
 
-        public IFlyBehavior setFlyBehavior
+        public IFlyBehavior FlyBehavior
         {
-            get { return flyBehavior; }
             set { flyBehavior = value; }
         }
-        public IQuackBehavior setQuackBehavior
+        public IQuackBehavior QuackBehavior
         {
-            get { return quackBehavior; }
             set { quackBehavior = value; }
         }
     }
