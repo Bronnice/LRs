@@ -17,6 +17,12 @@ namespace LR
             RubberDuck duck3 = new RubberDuck();
             DecoyDuck duck4 = new DecoyDuck();
 
+            IFlyBehavior flynoway = new FlyNoWay();
+            IQuackBehavior squek = new Squek();
+
+            duck1.setFlyBehavior = flynoway;
+            duck1.setQuackBehavior = squek;
+
             List<Duck> ducks = new List<Duck> { duck1, duck2, duck3, duck4 };
 
             for (int duck = 0; duck < ducks.Count; duck++)
