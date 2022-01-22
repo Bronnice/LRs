@@ -25,6 +25,7 @@ namespace LR
                 Console.WriteLine(ducks[duck].Display());
                 Console.WriteLine(ducks[duck].Fly());
                 Console.WriteLine(ducks[duck].Quack());
+                Console.WriteLine("\n------------------\n");
 
 
             }

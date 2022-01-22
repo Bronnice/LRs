@@ -41,19 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DecoyDuck.cs" />
-    <Compile Include="Duck.cs" />
-    <Compile Include="FlyNoWay.cs" />
-    <Compile Include="FlyWithWings.cs" />
-    <Compile Include="IFlyBehavior.cs" />
-    <Compile Include="MallardDuck.cs" />
-    <Compile Include="MuteQuack.cs" />
+    <Compile Include="Classes\DecoyDuck.cs" />
+    <Compile Include="Classes\Duck.cs" />
+    <Compile Include="Behaviors\FlyNoWay.cs" />
+    <Compile Include="Behaviors\FlyWithWings.cs" />
+    <Compile Include="Interfaces\IFlyBehavior.cs" />
+    <Compile Include="Classes\MallardDuck.cs" />
+    <Compile Include="Behaviors\MuteQuack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IQuackBehavior.cs" />
-    <Compile Include="DQuack.cs" />
-    <Compile Include="RedheadDuck.cs" />
-    <Compile Include="RubberDuck.cs" />
-    <Compile Include="Squek.cs" />
+    <Compile Include="Interfaces\IQuackBehavior.cs" />
+    <Compile Include="Behaviors\DQuack.cs" />
+    <Compile Include="Classes\RedheadDuck.cs" />
+    <Compile Include="Classes\RubberDuck.cs" />
+    <Compile Include="Behaviors\Squek.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

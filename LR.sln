@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR", "LR\LR.csproj", "{1E288F59-4B6A-4846-A529-BDEB3DBE92BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{06591E73-BE4C-493B-B410-765CB5E42ED2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckLibrary", "Library\DuckLibrary.csproj", "{06591E73-BE4C-493B-B410-765CB5E42ED2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
