@@ -23,8 +23,8 @@ namespace LR
             {
                 Console.WriteLine(ducks[duck].Swim());
                 Console.WriteLine(ducks[duck].Display());
-                Console.WriteLine(ducks[duck].Fly());
-                Console.WriteLine(ducks[duck].Quack());
+                Console.WriteLine(ducks[duck].performFly());
+                Console.WriteLine(ducks[duck].performQuack());
                 Console.WriteLine("\n------------------\n");
 
 

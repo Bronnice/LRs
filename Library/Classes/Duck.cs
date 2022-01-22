@@ -15,20 +15,26 @@ namespace Library
         {
             return "Буль буль буль";
         }
-
         public string Display()
         {
             return this.GetType() + " " + this.flyBehavior + " " + this.quackBehavior;
         }
-
-        public string Quack() 
+        public string performQuack() 
         {
             return quackBehavior.Quack();
         }
-
-        public string Fly()
+        public string performFly()
         {
             return flyBehavior.Fly();
+        }
+
+        public void setFlyBehavior(IFlyBehavior fb)
+        {
+            flyBehavior = fb;
+        }
+        public void setQuackBehavior(IQuackBehavior qb)
+        {
+            quackBehavior = qb;
         }
     }
 }
